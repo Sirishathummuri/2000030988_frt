@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.services-section{
+  background: url(bg.jpg);
+  background-size: cover;
+  padding: 60px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #ddd;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 40px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.service-box{
+  max-width: 33.33%;
+  padding: 10px;
+  text-align: center;
+  color: #ddd;
+  cursor: pointer;
+}
+
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid #82ccdd;
+  color: #82ccdd;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+  color: #ddd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .service-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .service-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .service-box{
+    max-width: 100%;
+  }
+}
+a {
+  color: white;
+}
+
+    </style>
+  </head>
+
+  <body>
+    <div class="services-section">
+      <div class="inner-width">
+        <h1 class="section-title">Our Services</h1>
+        <div class="border"></div>
+        <div class="services-container">
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fa fa-calendar"></i>
+            </div>
+            <div class="service-title">Appointment Booking</div>
+            <div class="service-desc">
+              You can book the appointments on differents slots based on your convenience
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fa fa-file-text"></i>
+            </div>
+            <div class="service-title">Meidcal Reports</div>
+            <div class="service-desc">
+              You can access all your Medical reports 
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fa fa-user-md"></i>
+            </div>
+            <div class="service-title">Doctor Details</div>
+            <div class="service-desc">
+              You can see doctor details which dates they will free for OP's and their basic information 
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fa fa-plus-square"></i>
+            </div>
+            <div class="service-title">Medical Prescription</div>
+            <div class="service-desc">
+              You can access all your Medical Prescription.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+             
+<i class="fa fa-youtube-play"></i>
+            </div>
+            <div class="service-title">Excerise videos</div>
+            <div class="service-desc">
+              You can see excerise videos based on your precautions,what excerise you need to take.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <i style="font-size:24px" class="fa">&#xf1d7;</i>
+            </div>
+            <div class="service-title"><a href="chat.html">Chat Bot</a></div>
+            <div class="service-desc">
+              Chat Bot can help all your queries
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
